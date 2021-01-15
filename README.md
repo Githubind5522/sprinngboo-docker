@@ -23,6 +23,12 @@ Docker login:
 Push docker image to dockerhub:
 --------
     docker push naresh240/spring-boot-hello:latest
+    
+To check the file in Docker, we can copy the content using docker cp
+===================================================================
+
+docker cp containerid/name:/opt /opt
+
 Deploy Springboot Application on EKS-Cluster:
 ------------
     kubectl apply -f deployement.yml
